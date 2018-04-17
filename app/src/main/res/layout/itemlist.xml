@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    android:background="#6f77ff">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:textColor="#FF0000"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:text="TITULO"
+            android:layout_marginLeft="5dp"/>
+
+
+        <!-- En el "android:layout_width" usaremos "wrap_content" en lugar de
+        "match_parent" porque queremos que solo el texto de la URL sea sensible
+         al clicado, y no toda la superficie en la misma horizontal. Será como un enlace web -->
+        <TextView
+            android:id="@+id/tvURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0000ff"
+            android:text="URL"
+            android:layout_marginLeft="5dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="#0000ff"
+        android:background="#FF0000"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+
+</LinearLayout>
